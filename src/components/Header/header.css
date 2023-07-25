@@ -1,9 +1,15 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Knewave&display=swap'); /* font-family: 'Knewave', cursive; */
+
 .header {
     height: 50px;
 }
 
 .header-icon {
     text-align: left;
-    font-size: xx-large;
+    font-size: xxx-large;
     padding-left: 30px;
+    font-family: 'Knewave', cursive;
+    color: antiquewhite;
 }
