@@ -1,0 +1,12 @@
+.hero-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-image: url("../../assets/Images/IMG_7107\ crop.png");
+  background-size: 15%;
+   background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
