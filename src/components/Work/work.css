@@ -31,6 +31,13 @@
     width: 100%;
     height: 0;
     padding-bottom: 100%;
+    
+}
+
+
+
+.box-1-hover:hover {
+    background-color: rgb(128, 128, 128, .7);
 }
 
 #box-2 {
@@ -44,7 +51,7 @@
 }
 
 #box-3 {
-    background-image: url(../../assets/Images/Screenshot\ 2023-07-25\ at\ 10.02.00\ PM.png);
+    background-image: url(../../assets/Images/Screenshot\ 2023-07-27\ at\ 5.58.46\ PM.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +61,7 @@
 }
 
 #box-4 {
-    background-image: url(../../assets/Images/Screenshot\ 2023-07-25\ at\ 10.02.00\ PM.png);
+    background-image: url(../../assets/Images/Freddie-Gibbs-Full-Width-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

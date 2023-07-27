@@ -8,6 +8,7 @@ function Work() {
       <div className="work-page">
         <div className="column">
             <div id="box-1" className="event-col">
+               
             </div>
             <div id="box-3" className="event-col">
             </div>
