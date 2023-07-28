@@ -4,6 +4,7 @@ import HeroPage from "./components/Hero/HeroPage";
 import Header from "./components/Header/Header";
 import Contact from "./components/Contact/Contact";
 import Work from "./components/Work/Work";
+import Jawny from "./components/Work/WorkHistory/Jawny";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<HeroPage />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/jawny" element={<Jawny />} /> 
           </Routes>
         </main>
       </div>
