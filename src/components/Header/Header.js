@@ -17,7 +17,7 @@ function Header() {
   return (
     <div>
       <header className='header'>
-        <NavLink className='header-icon' to="/heropage"> MISO <span className='title-small'>Presents</span> </NavLink>
+        <NavLink className='header-icon' to="/"> MISO <span className='title-small'>Presents</span> </NavLink>
         <div className='nav-links'>
           <HeaderLink to="/work">Work</HeaderLink>
           <HeaderLink to="/contact">+Contact</HeaderLink>

@@ -3,69 +3,97 @@
 } */
 
 .work-page {
-    display: flex;
-    justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
-  
+
+.work-main {
+  padding-top: 25px;
+}
+
 .column {
-    width: 49.5%; 
+  width: 49.5%;
 }
 
 .work-h1 {
-    
-        text-align: center;
-        font-family: 'Cantata One', serif;
-        color: antiquewhite;
-    
+  text-align: center;
+  font-family: "Cantata One", serif;
+  color: antiquewhite;
 }
 
 .event-col {
-    margin: 2%;
+  margin: 2%;
 }
 
 #box-1 {
-    background-image: url(../../assets/Images/Jawnysingle-Adios-1392x884.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    
+  background-image: url(../../assets/Images/Jawnysingle-Adios-1392x884.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
 }
 
-
-
-.box-1-hover:hover {
-    background-color: rgb(128, 128, 128, .7);
+.box-1-hover-txt {
+  text-align: left;
+  font-size: xx-large;
+  font-family: "Knewave", cursive;
+  padding: 10px 0 0 10px;
+  color: antiquewhite;
 }
 
 #box-2 {
-    background-image: url(../../assets/Images/Screenshot\ 2023-07-25\ at\ 10.02.00\ PM.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
+  background-image: url(../../assets/Images/d31f368296b608b1998431b802b46b93.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.box-2-hover-txt {
+  text-align: left;
+  font-size: xx-large;
+  font-family: "Knewave", cursive;
+  padding: 10px 0 0 10px;
+  color: antiquewhite;
 }
 
 #box-3 {
-    background-image: url(../../assets/Images/Screenshot\ 2023-07-27\ at\ 5.58.46\ PM.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
+  background-image: url(../../assets/Images/Screenshot\ 2023-07-27\ at\ 5.58.46\ PM.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.box-3-hover-txt {
+  text-align: left;
+  font-size: xx-large;
+  font-family: "Knewave", cursive;
+  padding: 10px 0 0 10px;
+  color: antiquewhite;
 }
 
 #box-4 {
-    background-image: url(../../assets/Images/Freddie-Gibbs-Full-Width-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
+  background-image: url(../../assets/Images/Freddie-Gibbs-Full-Width-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.box-4-hover-txt {
+  text-align: left;
+  font-size: xx-large;
+  font-family: "Knewave", cursive;
+  padding: 10px 0 0 10px;
+  color: antiquewhite;
 }
