@@ -29,11 +29,13 @@ function Work() {
               </div>
             </div>
           </Link>
+          <Link to="/freddiegibbs">
           <div id="box-4" className="event-col">
             <div className="box-4-hover">
               <div className="box-4-hover-txt">Freddy Gibbs</div>
             </div>
           </div>
+          </Link>
         </div>
       </div>
     </main>

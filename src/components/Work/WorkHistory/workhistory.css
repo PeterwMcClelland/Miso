@@ -33,7 +33,7 @@
 }
 
 .bio-txt {
-  padding: 10px;
+  padding: 10px 75px 10px 10px;
 }
 
 .mereba-img {
@@ -47,6 +47,15 @@
 
 .king-img {
     background-image: url(../../../assets/Images/Screenshot\ 2023-07-30\ at\ 6.20.47\ PM.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.freddie-img {
+    background-image: url(../../../assets/Images/esquire-npr-2015--2_custom-026f28deb64e00c991a9edf63fcd413b5a4d9adc-s1100-c50.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

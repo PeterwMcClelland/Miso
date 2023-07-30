@@ -7,6 +7,7 @@ import Work from "./components/Work/Work";
 import Jawny from "./components/Work/WorkHistory/Jawny";
 import Mereba from "./components/Work/WorkHistory/Mereba";
 import KingKrule from "./components/Work/WorkHistory/KingKrule";
+import FreddieGibbs from "./components/Work/WorkHistory/FreddieGibbs";
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
             <Route path="/" element={<HeroPage />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/jawny" element={<Jawny />} /> 
+            <Route path="/jawny" element={<Jawny />} />
             <Route path="/mereba" element={<Mereba />} />
             <Route path="/kingkrule" element={<KingKrule />} />
+            <Route path="/freddiegibbs" element={<FreddieGibbs />} />
           </Routes>
         </main>
       </div>
