@@ -18,9 +18,9 @@ function Mereba() {
     <div className="work-history">
       <div className="mereba-img"></div>
       <div className="bio-txt">
-        <h1 className="bio-h1">Jawny</h1>
+        <h1 className="bio-h1">Mereda</h1>
         <br />
-        <h3>Bend, OR</h3>
+        <h3>Los Angeles, CA</h3>
         <br />
         <p>{lorem}</p>
         <br />

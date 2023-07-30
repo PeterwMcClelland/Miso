@@ -6,6 +6,7 @@ import Contact from "./components/Contact/Contact";
 import Work from "./components/Work/Work";
 import Jawny from "./components/Work/WorkHistory/Jawny";
 import Mereba from "./components/Work/WorkHistory/Mereba";
+import KingKrule from "./components/Work/WorkHistory/KingKrule";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/jawny" element={<Jawny />} /> 
             <Route path="/mereba" element={<Mereba />} />
+            <Route path="/kingkrule" element={<KingKrule />} />
           </Routes>
         </main>
       </div>
