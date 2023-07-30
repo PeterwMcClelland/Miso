@@ -5,24 +5,27 @@
   grid-gap: 20px;
   text-align: left;
   color: rgb(255, 255, 255);
-  font-family: 'Cantata One', serif;
+  font-family: "Cantata One", serif;
 }
 
 .bio-h1 {
-    border-bottom: solid rgb(255, 255, 255) 2px;
-    padding-bottom: 5px;
+  border-bottom: solid rgb(255, 255, 255) 2px;
+  padding-bottom: 5px;
 }
 
 .scope {
-    list-style-type: none;
+  list-style-type: none;
+  display: inline-grid;
+  align-content: space-between;
+  gap: 10px;
+  padding-top: 10px;
 }
-
 
 /* Jawny */
 
 .jawny-img {
-    background-image: url(../../../assets/Images//Jawny-Vancouver+Artwork.jpg);
-    background-position: center;
+  background-image: url(../../../assets/Images//Jawny-Vancouver+Artwork.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -30,6 +33,14 @@
 }
 
 .bio-txt {
-    padding: 10px;
+  padding: 10px;
 }
 
+.mereba-img {
+    background-image: url(../../../assets/Images/9682ecf1d62543b85401f28ccb43a5d3.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}

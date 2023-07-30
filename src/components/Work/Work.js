@@ -13,11 +13,13 @@ function Work() {
             <div className="box-1-hover-txt">Jawny</div>
           </div>
           </Link>
+          <Link to="/mereba">
           <div id="box-3" className="event-col">
             <div className="box-3-hover">
               <div className="box-3-hover-txt">Mereba</div>
             </div>
           </div>
+          </Link>
         </div>
         <div className="column">
           <div id="box-2" className="event-col">

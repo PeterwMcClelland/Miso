@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Contact from "./components/Contact/Contact";
 import Work from "./components/Work/Work";
 import Jawny from "./components/Work/WorkHistory/Jawny";
+import Mereba from "./components/Work/WorkHistory/Mereba";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/jawny" element={<Jawny />} /> 
+            <Route path="/mereba" element={<Mereba />} />
           </Routes>
         </main>
       </div>
