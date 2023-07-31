@@ -3,6 +3,10 @@ import "./workhistory.css";
 import { loremIpsum } from "lorem-ipsum";
 
 function Jawny() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   const [lorem, setLorem] = useState("");
 
   useEffect(() => {

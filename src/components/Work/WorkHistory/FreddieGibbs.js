@@ -3,6 +3,10 @@ import "./workhistory.css";
 import { loremIpsum } from "lorem-ipsum";
 
 function FreddieGibbs() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   const [lorem, setLorem] = useState("");
 
   useEffect(() => {
@@ -20,7 +24,7 @@ function FreddieGibbs() {
       <div className="bio-txt">
         <h1 className="bio-h1">Freddie Gibbs</h1>
         <br />
-        <h3>Portland, OR</h3>
+        <h3>Austin, TX</h3>
         <br />
         <p>{lorem}</p>
         <br />

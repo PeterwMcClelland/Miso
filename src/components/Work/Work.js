@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./work.css";
 import { Link } from "react-router-dom";
+import { loremIpsum } from "lorem-ipsum";
 
 function Work() {
+    const [lorem, setLorem] = useState("");
+
+    useEffect(() => {
+      setLorem(
+        loremIpsum({
+          count: 10,
+          units: "words",
+        })
+      );
+    }, []);
+
   return (
     <main className="work-main">
       <h1 className="work-h1">Our Work</h1>
+      <p className="work-h2">{lorem}</p>
       <div className="work-page">
         <div className="column">
           <Link to="/jawny">
@@ -32,7 +45,7 @@ function Work() {
           <Link to="/freddiegibbs">
           <div id="box-4" className="event-col">
             <div className="box-4-hover">
-              <div className="box-4-hover-txt">Freddy Gibbs</div>
+              <div className="box-4-hover-txt">Freddie Gibbs</div>
             </div>
           </div>
           </Link>

@@ -9,7 +9,10 @@ import Mereba from "./components/Work/WorkHistory/Mereba";
 import KingKrule from "./components/Work/WorkHistory/KingKrule";
 import FreddieGibbs from "./components/Work/WorkHistory/FreddieGibbs";
 
+
+
 function App() {
+  
   return (
     <BrowserRouter>
       <div className="App">

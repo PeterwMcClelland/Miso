@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(175, 175, 175, 0.6);
+  background-color: rgba(175, 175, 175, 0.3);
   opacity: 0;
   transition: opacity 0.3s ease;
   
@@ -48,6 +48,12 @@
 #box-4:hover .box-4-hover-txt {
   display: block;
   
+}
+
+.work-h2 {
+    color: antiquewhite;
+    padding-bottom: 10px;
+    font-family: "Cantata One", serif;
 }
 
 .work-page {
