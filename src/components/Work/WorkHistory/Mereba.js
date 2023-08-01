@@ -35,7 +35,7 @@ function Mereba() {
           <li>-Social Media</li>
           <li>-Local Media Partnerships</li>
           <li>-Ticket Promotion</li>
-          <li>-Show Cordenation</li>
+          <li>-Show Coordination</li>
         </ul>
       </div>
     </div>
