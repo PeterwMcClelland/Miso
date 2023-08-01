@@ -22,7 +22,6 @@
   background-color: rgba(175, 175, 175, 0.3);
   opacity: 0;
   transition: opacity 0.3s ease;
-  
 }
 
 #box-1:hover::before,
@@ -36,10 +35,9 @@
 #box-2 .box-2-hover-txt,
 #box-3 .box-3-hover-txt,
 #box-4 .box-4-hover-txt {
-  position: relative; 
+  position: relative;
   z-index: 1;
   display: none;
-  
 }
 
 #box-1:hover .box-1-hover-txt,
@@ -47,13 +45,12 @@
 #box-3:hover .box-3-hover-txt,
 #box-4:hover .box-4-hover-txt {
   display: block;
-  
 }
 
 .work-h2 {
-    color: antiquewhite;
-    padding-bottom: 10px;
-    font-family: "Cantata One", serif;
+  color: antiquewhite;
+  padding-bottom: 10px;
+  font-family: "Cantata One", serif;
 }
 
 .work-page {
@@ -137,7 +134,6 @@
   width: 100%;
   height: 0;
   padding-bottom: 100%;
-  
 }
 
 .box-3-hover-txt {

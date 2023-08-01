@@ -3,9 +3,9 @@ import "./workhistory.css";
 import { loremIpsum } from "lorem-ipsum";
 
 function FreddieGibbs() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [lorem, setLorem] = useState("");
 
@@ -29,17 +29,17 @@ function FreddieGibbs() {
         <p>{lorem}</p>
         <br />
         <p>{lorem}</p>
-        <br/>
+        <br />
         <h3>Scope</h3>
         <ul className="scope">
-            <li>-Social Media</li>
-            <li>-Local Media Partnerships</li>
-            <li>-Ticket Promotion</li>
-            <li>-Show Cordenation</li>
+          <li>-Social Media</li>
+          <li>-Local Media Partnerships</li>
+          <li>-Ticket Promotion</li>
+          <li>-Show Cordenation</li>
         </ul>
       </div>
     </div>
   );
 }
 
-export default FreddieGibbs
+export default FreddieGibbs;

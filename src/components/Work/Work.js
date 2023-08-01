@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import { loremIpsum } from "lorem-ipsum";
 
 function Work() {
-    const [lorem, setLorem] = useState("");
+  const [lorem, setLorem] = useState("");
 
-    useEffect(() => {
-      setLorem(
-        loremIpsum({
-          count: 10,
-          units: "words",
-        })
-      );
-    }, []);
+  useEffect(() => {
+    setLorem(
+      loremIpsum({
+        count: 10,
+        units: "words",
+      })
+    );
+  }, []);
 
   return (
     <main className="work-main">
@@ -43,11 +43,11 @@ function Work() {
             </div>
           </Link>
           <Link to="/freddiegibbs">
-          <div id="box-4" className="event-col">
-            <div className="box-4-hover">
-              <div className="box-4-hover-txt">Freddie Gibbs</div>
+            <div id="box-4" className="event-col">
+              <div className="box-4-hover">
+                <div className="box-4-hover-txt">Freddie Gibbs</div>
+              </div>
             </div>
-          </div>
           </Link>
         </div>
       </div>
