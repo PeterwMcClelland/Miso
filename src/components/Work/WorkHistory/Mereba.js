@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./workhistory.css";
 import { loremIpsum } from "lorem-ipsum";
+import ScrollTrigger from "react-scroll-trigger";
 
 function Mereba() {
   useEffect(() => {
@@ -8,6 +9,7 @@ function Mereba() {
   }, []);
 
   const [lorem, setLorem] = useState("");
+  const [animation, setAnimation] = useState(false);
 
   useEffect(() => {
     setLorem(
@@ -18,27 +20,37 @@ function Mereba() {
     );
   }, []);
 
+  const onEnterViewport = () => {
+    setAnimation(true);
+  };
+
   return (
-    <div className="work-history">
-      <div className="mereba-img"></div>
-      <div className="bio-txt">
-        <h1 className="bio-h1">Mereda</h1>
-        <br />
-        <h3>Los Angeles, CA</h3>
-        <br />
-        <p>{lorem}</p>
-        <br />
-        <p>{lorem}</p>
-        <br />
-        <h3>Scope</h3>
-        <ul className="scope">
-          <li>-Social Media</li>
-          <li>-Local Media Partnerships</li>
-          <li>-Ticket Promotion</li>
-          <li>-Show Coordination</li>
-        </ul>
+    <ScrollTrigger onEnter={onEnterViewport}>
+      <div
+        className={`work-history ${
+          animation ? "slideInFromLeft-work-history" : ""
+        }`}
+      >
+        <div className="mereba-img"></div>
+        <div className="bio-txt">
+          <h1 className="bio-h1">Mereda</h1>
+          <br />
+          <h3>Los Angeles, CA</h3>
+          <br />
+          <p>{lorem}</p>
+          <br />
+          <p>{lorem}</p>
+          <br />
+          <h3>Scope</h3>
+          <ul className="scope">
+            <li>-Social Media</li>
+            <li>-Local Media Partnerships</li>
+            <li>-Ticket Promotion</li>
+            <li>-Show Coordination</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </ScrollTrigger>
   );
 }
 

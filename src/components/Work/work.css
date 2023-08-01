@@ -62,7 +62,7 @@
   padding-top: 25px;
 }
 
-.column {
+#column {
   width: 49.5%;
 }
 
@@ -160,4 +160,36 @@
   font-family: "Knewave", cursive;
   padding: 10px 0 0 10px;
   color: antiquewhite;
+}
+
+.liftIntoPlace-column-1 {
+  animation: liftIntoPlace-column-1 1s forwards;
+  display: flow-root;
+}
+
+@keyframes liftIntoPlace-column-1 {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.liftIntoPlace-column-2 {
+  animation: liftIntoPlace-column-2 1.5s forwards;
+  display: flow-root;
+}
+
+@keyframes liftIntoPlace-column-2 {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
