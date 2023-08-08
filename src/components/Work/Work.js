@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./work.css";
+import "./work.scss";
 import { Link } from "react-router-dom";
 import { loremIpsum } from "lorem-ipsum";
 import ScrollTrigger from "react-scroll-trigger";

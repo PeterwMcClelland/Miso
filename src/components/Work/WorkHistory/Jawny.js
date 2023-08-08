@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./workhistory.css";
+import "./workhistory.scss";
 import { loremIpsum } from "lorem-ipsum";
 import ScrollTrigger from "react-scroll-trigger";
 
@@ -21,6 +21,7 @@ function Jawny() {
   }, []);
 
   const onEnterViewport = () => {
+    console.log("Entered viewport");
     setAnimation(true);
   };
 
