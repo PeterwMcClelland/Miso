@@ -6,12 +6,6 @@ $box-hover-color: antiquewhite;
 $font-family-knewave: "Knewave", cursive;
 $gray-overlay: rgba(175, 175, 175, 0.3);
 
-/* 
-* {
-  border: 1px solid red;
-} 
-*/
-
 #box-1, #box-2, #box-3, #box-4 {
   position: relative;
   margin-bottom: 2%;
@@ -26,21 +20,26 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
     background-color: $gray-overlay;
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 1;
   }
 
   &:hover::before {
     opacity: 1;
   }
+}
 
-  .box-1-hover-txt, .box-2-hover-txt, .box-3-hover-txt, .box-4-hover-txt {
-    position: relative;
-    z-index: 1;
+.box-1-hover-txt, 
+.box-2-hover-txt, 
+.box-3-hover-txt, 
+.box-4-hover-txt {
     display: none;
+}
 
-    &:hover {
-      display: block;
-    }
-  }
+#box-1:hover .box-1-hover-txt, 
+#box-2:hover .box-2-hover-txt, 
+#box-3:hover .box-3-hover-txt, 
+#box-4:hover .box-4-hover-txt {
+    display: block;
 }
 
 #box-1 {
@@ -52,7 +51,7 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
 }
 
 #box-3 {
-  background-image: url(../../assets/Images/Screenshot\-2023-07-27\-at\-5.58.46\-PM.png);
+  background-image: url(../../assets/Images/Screenshot-2023-07-27-at-5.58.46-PM.png);
 }
 
 #box-4 {
@@ -121,10 +120,6 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
   font-family: $font-family-default;
   color: $antique-white;
 }
-
-// .event-col {
-//  margin: 2%;
-// }
 
 @keyframes liftIntoPlace-column-1 {
   from {
