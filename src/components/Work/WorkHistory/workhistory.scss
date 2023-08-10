@@ -1,5 +1,4 @@
 $white-color: rgb(255, 255, 255);
-$slide-in-duration: 3s;
 
 .work-history {
   padding-top: 50px;
@@ -9,20 +8,20 @@ $slide-in-duration: 3s;
   text-align: left;
   color: $white-color;
   font-family: "Cantata One", serif;
+}
 
-  .slideInFromLeft-work-history {
-    animation: slideInFromLeft $slide-in-duration forwards;
+.slideInFromLeft-work-history {
+  animation: slideInFromLeft 1.25s forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 

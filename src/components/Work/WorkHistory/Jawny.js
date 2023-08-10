@@ -11,6 +11,10 @@ function Jawny() {
   const [lorem, setLorem] = useState("");
   const [animation, setAnimation] = useState(false);
 
+  const onEnterViewport = () => {
+    setAnimation(true);
+  };
+
   useEffect(() => {
     setLorem(
       loremIpsum({
@@ -20,10 +24,7 @@ function Jawny() {
     );
   }, []);
 
-  const onEnterViewport = () => {
-    console.log("Entered viewport");
-    setAnimation(true);
-  };
+  
 
   return (
     <ScrollTrigger onEnter={onEnterViewport}>

@@ -1,4 +1,3 @@
-// Variables
 $antique-white: antiquewhite;
 $font-family-default: "Cantata One", serif;
 $box-image-size: 100%;
@@ -6,7 +5,10 @@ $box-hover-color: antiquewhite;
 $font-family-knewave: "Knewave", cursive;
 $gray-overlay: rgba(175, 175, 175, 0.3);
 
-#box-1, #box-2, #box-3, #box-4 {
+#box-1,
+#box-2,
+#box-3,
+#box-4 {
   position: relative;
   margin-bottom: 2%;
 
@@ -28,18 +30,18 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
   }
 }
 
-.box-1-hover-txt, 
-.box-2-hover-txt, 
-.box-3-hover-txt, 
+.box-1-hover-txt,
+.box-2-hover-txt,
+.box-3-hover-txt,
 .box-4-hover-txt {
-    display: none;
+  display: none;
 }
 
-#box-1:hover .box-1-hover-txt, 
-#box-2:hover .box-2-hover-txt, 
-#box-3:hover .box-3-hover-txt, 
+#box-1:hover .box-1-hover-txt,
+#box-2:hover .box-2-hover-txt,
+#box-3:hover .box-3-hover-txt,
 #box-4:hover .box-4-hover-txt {
-    display: block;
+  display: block;
 }
 
 #box-1 {
@@ -76,7 +78,10 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
   color: $box-hover-color;
 }
 
-#box-1, #box-2, #box-3, #box-4 {
+#box-1,
+#box-2,
+#box-3,
+#box-4 {
   @include box-styles;
 }
 
