@@ -67,7 +67,7 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
   background-image: url(../../assets/Images/Freddie-Gibbs-Full-Width-1.jpg);
 }
 
-@mixin box-styles {
+ %box-styles {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +77,7 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
   position: relative;
 }
 
-@mixin hover-text-styles {
+ %hover-text-styles {
   text-align: left;
   font-size: xx-large;
   font-family: $font-family-knewave;
@@ -89,23 +89,23 @@ $gray-overlay: rgba(175, 175, 175, 0.3);
 #box-2,
 #box-3,
 #box-4 {
-  @include box-styles;
+  @extend %box-styles;
 }
 
 .box-1-hover-txt {
-  @include hover-text-styles;
+  @extend %hover-text-styles;
 }
 
 .box-2-hover-txt {
-  @include hover-text-styles;
+  @extend %hover-text-styles;
 }
 
 .box-3-hover-txt {
-  @include hover-text-styles;
+  @extend %hover-text-styles;
 }
 
 .box-4-hover-txt {
-  @include hover-text-styles;
+  @extend %hover-text-styles;
 }
 
 .work-h2 {

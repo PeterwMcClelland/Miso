@@ -8,7 +8,6 @@ import Jawny from "./components/Work/WorkHistory/Jawny";
 import Mereba from "./components/Work/WorkHistory/Mereba";
 import KingKrule from "./components/Work/WorkHistory/KingKrule";
 import FreddieGibbs from "./components/Work/WorkHistory/FreddieGibbs";
-import Shows from "./components/Shows/Shows";
 
 function App() {
   return (
@@ -26,8 +25,6 @@ function App() {
             <Route path="/kingkrule" element={<KingKrule />} />
             <Route path="/freddiegibbs" element={<FreddieGibbs />} />
           </Routes>
-
-          <Shows />
         </main>
       </div>
     </BrowserRouter>

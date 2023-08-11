@@ -1,0 +1,74 @@
+.hero-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: {
+    position: center;
+    image: url("../../assets/Images/IMG_7107\ crop.png");
+    size: 20%;
+    repeat: no-repeat;
+  }
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 25px;
+
+  .column {
+    flex: 1;
+    height: 100px;
+
+    margin: 0 10px;
+    height: 625px;
+  }
+}
+
+%img-common {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 425px;
+  margin-bottom: 10px;
+}
+
+.img-jawny {
+  @extend %img-common;
+  background-image: url("../../assets/Images/Jawny-Vancouver+Artwork.jpg");
+}
+
+.img-freddie {
+  background-image: url("../../assets/Images/Freddie-Gibbs-Full-Width-1.jpg");
+  @extend %img-common;
+}
+
+.img-king {
+  background-image: url("../../assets/Images/d31f368296b608b1998431b802b46b93.jpg");
+  @extend %img-common;
+}
+
+.img-mereba {
+  background-image: url("../../assets/Images/mereba-press-photo-scaled.jpg");
+  @extend %img-common;
+}
+
+.artist-card {
+  height: 625px;
+  border: 1px solid #ccc;
+  margin: 10px 0px 10px 0px;
+}
