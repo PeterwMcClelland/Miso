@@ -25,7 +25,7 @@ function Header() {
           MISO <span className="title-small">Presents</span>{" "}
         </NavLink>
         <div className="nav-links">
-          <HeaderLink to="/work">Work</HeaderLink>
+          {/* <HeaderLink to="/work">Work</HeaderLink> */}
           <br />
           <HeaderLink to="/contact">+Contact</HeaderLink>
         </div>

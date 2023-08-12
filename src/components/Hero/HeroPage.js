@@ -1,54 +1,127 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./heropage.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faTicket, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock,
+  faTicket,
+  faLocationDot,
+  faArrowDownLong,
+} from "@fortawesome/free-solid-svg-icons";
 
-const clock = <FontAwesomeIcon icon={faClock} />
-const ticket = <FontAwesomeIcon icon={faTicket} />
-const location = <FontAwesomeIcon icon={faLocationDot} />
+const clock = <FontAwesomeIcon icon={faClock} />;
+const ticket = <FontAwesomeIcon icon={faTicket} />;
+const location = <FontAwesomeIcon icon={faLocationDot} />;
+const downArrow = <FontAwesomeIcon icon={faArrowDownLong} />;
+
 
 
 
 function HeroPage() {
+
+  const showRef = useRef(null);
+
+  const scrollToShows = () => {
+    if (showRef.current) {
+      showRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div>
-      <body className="hero-page"></body>
-      <div>
-        <h1>Coming Soon</h1>
+    <div className="shows-background">
+      <body className="hero-page">
+        <div className="show-btn-container">
+          <div className="shows-button" onClick={scrollToShows}>Upcoming Shows</div>
+          <div className="down-arrow">{downArrow}</div>
+        </div>
+      </body>
+      <div ref={showRef} className="show-page">
+      <h1 >Coming Soon</h1>
         <div className="three-columns">
           {/* column 1 */}
           <div className="column">
             <div className="artist-card">
               <div className="img-jawny"></div>
               <h2 className="h2-artist">Jawny</h2>
-              <ul className="show-info">
-                <li>{clock} Doors: 7pm - Show 8pm</li>
-                <li>{ticket} Tickets: $30</li>
-                <li>{location} Location: 25 E 28th St</li>
-              </ul>
-              <div>
-              <button className="button">Buy Tickets</button>
-            </div>
+              <div id="show-info">
+                <ul className="show-info">
+                  <li>{clock} Doors: 7pm - Show 8pm</li>
+                  <li>{ticket} Tickets: $30</li>
+                  <li>{location} Location: 25 E 28th St</li>
+                </ul>
+                <div className="button-field">
+                  <div id="button-blue" className="button">
+                    Buy Tickets
+                  </div>
+                  <Link to="/jawny">
+                    <div className="button">Learn More</div>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="artist-card">
               <div className="img-mereba"></div>
-              <p>Location: 2910 e 6th</p>
+              <h2 className="h2-artist">Mereba</h2>
+              <div id="show-info">
+                <ul className="show-info">
+                  <li>{clock} Doors: 7pm - Show 8pm</li>
+                  <li>{ticket} Tickets: $30</li>
+                  <li>{location} Location: 25 E 28th St</li>
+                </ul>
+                <div className="button-field">
+                  <div id="button-blue" className="button">
+                    Buy Tickets
+                  </div>
+                  <Link to="/mereba">
+                    <div className="button">Learn More</div>
+                  </Link>
+                </div>
+              </div>
             </div>
-
           </div>
           {/* column 2 */}
           <div className="column">
             <div className="artist-card">
               <div className="img-freddie"></div>
-              <p>Location: 342 S 40st</p>
+              <h2 className="h2-artist">Freddie Gibbs</h2>
+              <div id="show-info">
+                <ul className="show-info">
+                  <li>{clock} Doors: 7pm - Show 8pm</li>
+                  <li>{ticket} Tickets: $30</li>
+                  <li>{location} Location: 25 E 28th St</li>
+                </ul>
+                <div className="button-field">
+                  <div id="button-blue" className="button">
+                    Buy Tickets
+                  </div>
+                  <Link to="/freddiegibbs">
+                    <div className="button">Learn More</div>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="artist-card">
               <div className="img-king"></div>
-              <p>Location:</p>
+              <h2 className="h2-artist">King Krule</h2>
+              <div id="show-info">
+                <ul className="show-info">
+                  <li>{clock} Doors: 7pm - Show 8pm</li>
+                  <li>{ticket} Tickets: $30</li>
+                  <li>{location} Location: 25 E 28th St</li>
+                </ul>
+                <div className="button-field">
+                  <div id="button-blue" className="button">
+                    Buy Tickets
+                  </div>
+                  <Link to="/kingkrule">
+                    <div className="button">Learn More</div>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           {/* column 3 */}
-          <div className="column">column 3</div>
+          <div id="announc-h1" className="column">Announcements</div>
         </div>
       </div>
     </div>
