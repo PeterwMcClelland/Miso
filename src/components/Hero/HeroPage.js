@@ -1,5 +1,13 @@
 import React from "react";
 import "./heropage.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock, faTicket, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
+const clock = <FontAwesomeIcon icon={faClock} />
+const ticket = <FontAwesomeIcon icon={faTicket} />
+const location = <FontAwesomeIcon icon={faLocationDot} />
+
+
 
 function HeroPage() {
   return (
@@ -12,12 +20,21 @@ function HeroPage() {
           <div className="column">
             <div className="artist-card">
               <div className="img-jawny"></div>
-              <p>Location: 2910 e 6th</p>
+              <h2 className="h2-artist">Jawny</h2>
+              <ul className="show-info">
+                <li>{clock} Doors: 7pm - Show 8pm</li>
+                <li>{ticket} Tickets: $30</li>
+                <li>{location} Location: 25 E 28th St</li>
+              </ul>
+              <div>
+              <button className="button">Buy Tickets</button>
+            </div>
             </div>
             <div className="artist-card">
               <div className="img-mereba"></div>
               <p>Location: 2910 e 6th</p>
             </div>
+
           </div>
           {/* column 2 */}
           <div className="column">
