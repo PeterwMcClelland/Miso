@@ -14,11 +14,7 @@ const ticket = <FontAwesomeIcon icon={faTicket} />;
 const location = <FontAwesomeIcon icon={faLocationDot} />;
 const downArrow = <FontAwesomeIcon icon={faArrowDownLong} />;
 
-
-
-
 function HeroPage() {
-
   const showRef = useRef(null);
 
   const scrollToShows = () => {
@@ -31,17 +27,21 @@ function HeroPage() {
     <div className="shows-background">
       <body className="hero-page">
         <div className="show-btn-container">
-          <div className="shows-button" onClick={scrollToShows}>Upcoming Shows</div>
+          <div className="shows-button" onClick={scrollToShows}>
+            Upcoming Shows
+          </div>
           <div className="down-arrow">{downArrow}</div>
         </div>
       </body>
       <div ref={showRef} className="show-page">
-      <h1 >Coming Soon</h1>
+        <h1>Coming Soon</h1>
         <div className="three-columns">
           {/* column 1 */}
           <div className="column">
             <div className="artist-card">
+            <Link to="/jawny">
               <div className="img-jawny"></div>
+              </Link>
               <h2 className="h2-artist">Jawny</h2>
               <div id="show-info">
                 <ul className="show-info">
@@ -54,13 +54,15 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/jawny">
-                    <div className="button">Learn More</div>
+                    <div id="button-info" className="button">Learn More</div>
                   </Link>
                 </div>
               </div>
             </div>
             <div className="artist-card">
+            <Link to="/mereba">
               <div className="img-mereba"></div>
+              </Link>
               <h2 className="h2-artist">Mereba</h2>
               <div id="show-info">
                 <ul className="show-info">
@@ -73,7 +75,7 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/mereba">
-                    <div className="button">Learn More</div>
+                    <div id="button-info" className="button">Learn More</div>
                   </Link>
                 </div>
               </div>
@@ -82,7 +84,9 @@ function HeroPage() {
           {/* column 2 */}
           <div className="column">
             <div className="artist-card">
+            <Link to="/freddiegibbs">
               <div className="img-freddie"></div>
+              </Link>
               <h2 className="h2-artist">Freddie Gibbs</h2>
               <div id="show-info">
                 <ul className="show-info">
@@ -95,13 +99,15 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/freddiegibbs">
-                    <div className="button">Learn More</div>
+                    <div id="button-info" className="button">Learn More</div>
                   </Link>
                 </div>
               </div>
             </div>
             <div className="artist-card">
+            <Link to="/kingkrule">
               <div className="img-king"></div>
+              </Link>
               <h2 className="h2-artist">King Krule</h2>
               <div id="show-info">
                 <ul className="show-info">
@@ -114,14 +120,16 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/kingkrule">
-                    <div className="button">Learn More</div>
+                    <div id="button-info" className="button">Learn More</div>
                   </Link>
                 </div>
               </div>
             </div>
           </div>
           {/* column 3 */}
-          <div id="announc-h1" className="column">Announcements</div>
+          <div id="announc-h1" className="column">
+            Announcements
+          </div>
         </div>
       </div>
     </div>

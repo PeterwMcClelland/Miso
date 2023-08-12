@@ -2,6 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./workhistory.scss";
 import { loremIpsum } from "lorem-ipsum";
 import ScrollTrigger from "react-scroll-trigger";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock,
+  faTicket,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+
+const clock = <FontAwesomeIcon icon={faClock} />;
+const ticket = <FontAwesomeIcon icon={faTicket} />;
+const location = <FontAwesomeIcon icon={faLocationDot} />;
 
 function KingKrule() {
   useEffect(() => {
@@ -41,13 +51,15 @@ function KingKrule() {
           <br />
           <p>{lorem}</p>
           <br />
-          <h3>Scope</h3>
+          <h3>Details</h3>
           <ul className="scope">
-            <li>-Social Media</li>
-            <li>-Local Media Partnerships</li>
-            <li>-Ticket Promotion</li>
-            <li>-Show Coordination</li>
+            <li>{clock} Doors: 7pm - Show 8pm</li>
+            <li>{ticket} Tickets: $30</li>
+            <li>{location} Location: 25 E 28th St</li>
           </ul>
+          <div id="button-blue-prof" className="button-prof">
+            Buy Tickets
+          </div>
         </div>
       </div>
     </ScrollTrigger>
