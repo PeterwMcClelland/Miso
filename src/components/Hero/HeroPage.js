@@ -61,10 +61,10 @@ function HeroPage() {
                   <li>{location} Location: 25 E 28th St</li>
                 </ul>
                 <div className="button-field">
-                <Link to="/jawny">
-                  <div id="button-blue" className="button">
-                    Buy Tickets
-                  </div>
+                  <Link to="/jawny">
+                    <div id="button-blue" className="button">
+                      Buy Tickets
+                    </div>
                   </Link>
                   <Link to="/jawny">
                     <div id="button-info" className="button">
@@ -86,10 +86,10 @@ function HeroPage() {
                   <li>{location} Location: 25 E 28th St</li>
                 </ul>
                 <div className="button-field">
-                <Link to="/mereba">
-                  <div id="button-blue" className="button">
-                    Buy Tickets
-                  </div>
+                  <Link to="/mereba">
+                    <div id="button-blue" className="button">
+                      Buy Tickets
+                    </div>
                   </Link>
                   <Link to="/mereba">
                     <div id="button-info" className="button">
@@ -114,10 +114,10 @@ function HeroPage() {
                   <li>{location} Location: 25 E 28th St</li>
                 </ul>
                 <div className="button-field">
-                <Link to="/freddiegibbs">
-                  <div id="button-blue" className="button">
-                    Buy Tickets
-                  </div>
+                  <Link to="/freddiegibbs">
+                    <div id="button-blue" className="button">
+                      Buy Tickets
+                    </div>
                   </Link>
                   <Link to="/freddiegibbs">
                     <div id="button-info" className="button">
@@ -139,10 +139,10 @@ function HeroPage() {
                   <li>{location} Location: 25 E 28th St</li>
                 </ul>
                 <div className="button-field">
-                <Link to="/kingkrule">
-                  <div id="button-blue" className="button">
-                    Buy Tickets
-                  </div>
+                  <Link to="/kingkrule">
+                    <div id="button-blue" className="button">
+                      Buy Tickets
+                    </div>
                   </Link>
                   <Link to="/kingkrule">
                     <div id="button-info" className="button">

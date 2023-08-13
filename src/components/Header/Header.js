@@ -25,19 +25,21 @@ function HeaderLink({ to, children }) {
 }
 
 function Header() {
+  const [showNav, setShowNav] = React.useState(false);
+
   return (
     <div>
       <header className="header">
         <NavLink className="header-icon" to="/">
-          {" "}
-          MISO <span className="title-small">Presents</span>{" "}
+          MISO <span className="title-small">Presents</span>
         </NavLink>
-        <div className="nav-links">
+        <button className="mobile-menu-toggle" onClick={() => setShowNav(!showNav)}>
+          ☰
+        </button>
+        <div className={`nav-links ${showNav ? 'active' : ''}`}>
           <div className="icons">{insta}</div>
           <div className="icons">{twitter}</div>
           <div className="icons">{facebook}</div>
-          {/* <HeaderLink to="/work">Work</HeaderLink> */}
-          <br />
           <HeaderLink to="/contact">+Contact</HeaderLink>
         </div>
       </header>
