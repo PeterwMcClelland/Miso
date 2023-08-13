@@ -51,12 +51,17 @@ function FreddieGibbs() {
           <br />
           <p>{lorem}</p>
           <br />
-          <h3>Details</h3>
-          <ul className="scope">
-            <li>{clock} Doors: 7pm - Show 8pm</li>
-            <li>{ticket} Tickets: $30</li>
-            <li>{location} Location: 25 E 28th St</li>
-          </ul>
+          <div className="details">
+            <div className="text-details">
+              <h3>Details</h3>
+              <ul className="scope">
+                <li>{clock} Doors: 7pm - Show 8pm</li>
+                <li>{ticket} Tickets: $30</li>
+                <li>{location} Location: 25 E 28th St</li>
+              </ul>
+            </div>
+            <div className="detail-image"></div>
+          </div>
           <div id="button-blue-prof" className="button-prof">
             Buy Tickets
           </div>
