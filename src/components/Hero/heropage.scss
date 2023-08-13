@@ -14,7 +14,9 @@
   animation: fadeIn 1.5s ease-in-out 0.3s forwards;
 }
 
-li {padding: 5px;}
+li {
+  padding: 5px;
+}
 
 .shows-button {
   margin-top: 500px;
@@ -230,8 +232,7 @@ h1 {
 
 @media only screen and (max-width: 450px) {
   .hero-page {
-    justify-content: flex-start;
-    padding-top: 50px;
+    padding-top: 250px;
   }
 
   .three-columns {
@@ -239,29 +240,31 @@ h1 {
 
     .column {
       margin: 10px 0;
-      height: auto; // Remove fixed height
+      height: auto;
     }
   }
 
   .shows-button {
-    margin-top: 50px;
-    font-size: x-large; // Reduce font size
+    margin-top: 100px;
+    font-size: x-large;
   }
 
   .shows-button:hover {
-    font-size: xx-large; // Reduce hover font size
+    font-size: xx-large;
   }
 
-  h1, #announc-h1 {
-    font-size: xx-large; // Reduce h1 font size
+  h1,
+  #announc-h1 {
+    font-size: xx-large;
   }
 
   .artist-card {
-    height: auto; // Make card height automatic
+    height: auto;
   }
 
-  .show-info, .button {
-    font-size: 12px; // Reduce font size
+  .show-info,
+  .button {
+    font-size: 12px;
   }
 
   .show-page {
@@ -269,12 +272,16 @@ h1 {
     padding-top: 25px;
   }
 
-  .button {
-    width: 90px; // Adjust button width
-    font-size: 12px; // Reduce button font size
+  .hero-page {
+    background-size: 60%;
   }
-  
+
+  .button {
+    width: 90px;
+    font-size: 12px;
+  }
+
   .detail-image {
-    margin-left: 50px; // Adjust margin for the image
+    margin-left: 50px;
   }
 }

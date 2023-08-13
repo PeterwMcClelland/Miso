@@ -89,3 +89,29 @@ $white-color: rgb(255, 255, 255);
   @extend %img-common;
   background-image: url(../../../assets/Images/esquire-npr-2015--2_custom-026f28deb64e00c991a9edf63fcd413b5a4d9adc-s1100-c50.jpg);
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .work-history {
+    grid-template-columns: 1fr; // change grid to single column
+    padding: 20px; // adjust padding
+  }
+
+  .bio-txt {
+    padding: 10px; // reduce padding for mobile
+  }
+
+  .bio-h1 {
+    font-size: 1.5em; // scale down the header font size
+  }
+
+  .details {
+    grid-template-columns: 1fr; // change details to single column grid
+
+    .detail-image {
+      margin-left: 0; // remove margin
+      height: 150px; // adjust height
+      width: auto;
+    }
+  }
+}
