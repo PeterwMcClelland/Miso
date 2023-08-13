@@ -32,10 +32,30 @@ $white-color: rgb(255, 255, 255);
 
 .scope {
   list-style-type: none;
-  display: inline-grid;
-  align-content: space-between;
+  display: grid;
   gap: 10px;
   padding-top: 10px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
+
+  .detail-image {
+    grid-column: 2; 
+    max-width: 100%;
+    height: auto;
+    background-image: url(../../../assets/Images/MisoImg2.PNG);
+    height: 200px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out 0.3s forwards;
+  }
 }
 
 %img-common {

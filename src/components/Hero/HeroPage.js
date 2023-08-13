@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./heropage.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { loremIpsum } from "lorem-ipsum";
 import {
   faClock,
   faTicket,
@@ -16,12 +17,22 @@ const downArrow = <FontAwesomeIcon icon={faArrowDownLong} />;
 
 function HeroPage() {
   const showRef = useRef(null);
+  const [lorem, setLorem] = useState("");
 
   const scrollToShows = () => {
     if (showRef.current) {
       showRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    setLorem(
+      loremIpsum({
+        count: 35,
+        units: "words",
+      })
+    );
+  }, []);
 
   return (
     <div className="shows-background">
@@ -129,7 +140,13 @@ function HeroPage() {
           {/* column 3 */}
           <div id="announc-h1" className="column">
             Announcements
+            <p className="announc-txt">{lorem}</p>
+            <br />
+            
+            <p className="announc-txt">{lorem}</p>
+            <div className="detail-image"></div>
           </div>
+          
         </div>
       </div>
     </div>
