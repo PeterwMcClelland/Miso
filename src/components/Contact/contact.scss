@@ -2,21 +2,20 @@
   background-color: #6192a0;
   height: 700px;
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center;     /* Vertically center the content */
-  flex-direction: column;  /* This will ensure the content remains in a top-down column format */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-txt {
   width: 50%;
-  font-family: 'Knewave', cursive;
+  font-family: "Knewave", cursive;
   color: antiquewhite;
   font-size: xx-large;
 }
 
 a {
   color: antiquewhite;
-  
 }
 
 @media only screen and (max-width: 450px) {

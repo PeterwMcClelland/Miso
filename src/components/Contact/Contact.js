@@ -5,7 +5,12 @@ function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-txt">
-        <h2>For any questions regarding shows or event promotion please email <a className="a-txt" href="mailto:info@misopresents.com">info@misopresents.com</a></h2>
+        <h2>
+          For any questions regarding shows or event promotion please email
+          <a className="a-txt" href="mailto:info@misopresents.com">
+            info@misopresents.com
+          </a>
+        </h2>
       </div>
     </div>
   );
