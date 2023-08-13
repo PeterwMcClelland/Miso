@@ -26,8 +26,8 @@ function Work() {
     <ScrollTrigger onEnter={onEnterViewport}>
       <main className="work-main">
         <div className="header-txt">
-        <h1 className="work-h1">Our Work</h1>
-        <p className="work-h2">{lorem}</p>
+          <h1 className="work-h1">Our Work</h1>
+          <p className="work-h2">{lorem}</p>
         </div>
         <div className="work-page">
           <div

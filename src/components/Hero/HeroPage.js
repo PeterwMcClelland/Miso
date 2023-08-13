@@ -50,8 +50,8 @@ function HeroPage() {
           {/* column 1 */}
           <div className="column">
             <div className="artist-card">
-            <Link to="/jawny">
-              <div className="img-jawny"></div>
+              <Link to="/jawny">
+                <div className="img-jawny"></div>
               </Link>
               <h2 className="h2-artist">Jawny</h2>
               <div id="show-info">
@@ -65,14 +65,16 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/jawny">
-                    <div id="button-info" className="button">Learn More</div>
+                    <div id="button-info" className="button">
+                      Learn More
+                    </div>
                   </Link>
                 </div>
               </div>
             </div>
             <div className="artist-card">
-            <Link to="/mereba">
-              <div className="img-mereba"></div>
+              <Link to="/mereba">
+                <div className="img-mereba"></div>
               </Link>
               <h2 className="h2-artist">Mereba</h2>
               <div id="show-info">
@@ -86,7 +88,9 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/mereba">
-                    <div id="button-info" className="button">Learn More</div>
+                    <div id="button-info" className="button">
+                      Learn More
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -95,8 +99,8 @@ function HeroPage() {
           {/* column 2 */}
           <div className="column">
             <div className="artist-card">
-            <Link to="/freddiegibbs">
-              <div className="img-freddie"></div>
+              <Link to="/freddiegibbs">
+                <div className="img-freddie"></div>
               </Link>
               <h2 className="h2-artist">Freddie Gibbs</h2>
               <div id="show-info">
@@ -110,14 +114,16 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/freddiegibbs">
-                    <div id="button-info" className="button">Learn More</div>
+                    <div id="button-info" className="button">
+                      Learn More
+                    </div>
                   </Link>
                 </div>
               </div>
             </div>
             <div className="artist-card">
-            <Link to="/kingkrule">
-              <div className="img-king"></div>
+              <Link to="/kingkrule">
+                <div className="img-king"></div>
               </Link>
               <h2 className="h2-artist">King Krule</h2>
               <div id="show-info">
@@ -131,7 +137,9 @@ function HeroPage() {
                     Buy Tickets
                   </div>
                   <Link to="/kingkrule">
-                    <div id="button-info" className="button">Learn More</div>
+                    <div id="button-info" className="button">
+                      Learn More
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -142,11 +150,9 @@ function HeroPage() {
             Announcements
             <p className="announc-txt">{lorem}</p>
             <br />
-            
             <p className="announc-txt">{lorem}</p>
             <div className="detail-image"></div>
           </div>
-          
         </div>
       </div>
     </div>

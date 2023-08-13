@@ -40,10 +40,10 @@ $white-color: rgb(255, 255, 255);
 .details {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px; 
+  gap: 20px;
 
   .detail-image {
-    grid-column: 2; 
+    grid-column: 2;
     max-width: 100%;
     height: auto;
     background-image: url(../../../assets/Images/MisoImg2.PNG);
