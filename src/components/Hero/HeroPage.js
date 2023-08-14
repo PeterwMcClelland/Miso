@@ -159,7 +159,7 @@ function HeroPage() {
             <p className="announc-txt">{lorem}</p>
             <br />
             <p className="announc-txt">{lorem}</p>
-            <div className="detail-image"></div>
+            {/* <div className="detail-image"></div> */}
           </div>
         </div>
       </div>
