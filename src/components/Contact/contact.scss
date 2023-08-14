@@ -14,8 +14,11 @@
   font-size: xx-large;
 }
 
-a {
+.a-txt {
   color: antiquewhite;
+  font-family: 'Bodoni Moda', serif;
+  text-decoration: underline;
+  
 }
 
 @media only screen and (max-width: 450px) {
