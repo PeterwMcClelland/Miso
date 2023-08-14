@@ -16,7 +16,7 @@ HTML, CSS, SCSS, React, JavaScript, Google Fonts & Fontawesome.
 ## GitHub & Deployed Site
 Repo: https://github.com/PeterwMcClelland/Miso
 
-Deployed: 
+Deployed: https://miso-presents-7126a5ab349e.herokuapp.com/
 
 ## Contributers
 Made By Peter McClelland
