@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-regular": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -49,13 +50,12 @@
     ]
   },
   "devDependencies": {
-    
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+
     "sass": "^1.64.2"
   },
   "engines": {
     "node": "19.5.0"
   }
-  
+
 
 }
