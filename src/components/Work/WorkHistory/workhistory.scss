@@ -93,8 +93,8 @@ $white-color: rgb(255, 255, 255);
 /* Mobile */
 @media (max-width: 450px) {
   .work-history {
-    grid-template-columns: 1fr; // change grid to single column
-    padding: 20px; // adjust padding
+    grid-template-columns: 1fr; 
+    padding: 20px; 
   }
 
   %img-common {
@@ -102,19 +102,19 @@ $white-color: rgb(255, 255, 255);
   }
 
   .bio-txt {
-    padding: 10px; // reduce padding for mobile
+    padding: 10px; 
   }
 
   .bio-h1 {
-    font-size: 1.5em; // scale down the header font size
+    font-size: 1.5em; 
   }
 
   .details {
-    grid-template-columns: 1fr; // change details to single column grid
+    grid-template-columns: 1fr; 
 
     .detail-image {
-      margin-left: 0; // remove margin
-      height: 150px; // adjust height
+      margin-left: 0; 
+      height: 150px; 
       width: auto;
     }
   }
