@@ -97,6 +97,10 @@ $white-color: rgb(255, 255, 255);
     padding: 20px; // adjust padding
   }
 
+  %img-common {
+    height: 50vh;
+  }
+
   .bio-txt {
     padding: 10px; // reduce padding for mobile
   }
