@@ -3,14 +3,17 @@ import { NavLink } from "react-router-dom";
 import "./header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faInstagram, faSquareFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
-
+import {
+  faInstagram,
+  faSquareFacebook,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 import { useMatch } from "react-router-dom";
 
-const insta = <FontAwesomeIcon icon={faInstagram} />
-const facebook = <FontAwesomeIcon icon={faSquareFacebook} />
-const twitter = <FontAwesomeIcon icon={faTwitter} />
+const insta = <FontAwesomeIcon icon={faInstagram} />;
+const facebook = <FontAwesomeIcon icon={faSquareFacebook} />;
+const twitter = <FontAwesomeIcon icon={faTwitter} />;
 
 function HeaderLink({ to, children }) {
   let match = useMatch(to);
@@ -33,10 +36,13 @@ function Header() {
         <NavLink className="header-icon" to="/">
           MISO <span className="title-small">Presents</span>
         </NavLink>
-        <button className="mobile-menu-toggle" onClick={() => setShowNav(!showNav)}>
+        <button
+          className="mobile-menu-toggle"
+          onClick={() => setShowNav(!showNav)}
+        >
           ☰
         </button>
-        <div className={`nav-links ${showNav ? 'active' : ''}`}>
+        <div className={`nav-links ${showNav ? "active" : ""}`}>
           <div className="icons">{insta}</div>
           <div className="icons">{twitter}</div>
           <div className="icons">{facebook}</div>

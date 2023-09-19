@@ -7,7 +7,7 @@ function Contact() {
       <div className="contact-txt">
         <h2>
           For any questions regarding shows or event promotion please email
-          <br/>
+          <br />
           <a className="a-txt" href="mailto:info@misopresents.com">
             info@misopresents.com
           </a>
