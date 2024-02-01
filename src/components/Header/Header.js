@@ -34,7 +34,7 @@ function Header() {
     <div>
       <header className="header">
         <NavLink className="header-icon" to="/">
-          MISO <span className="title-small">Presents</span>
+          MOSO <span className="title-small">Presents</span>
         </NavLink>
         <button
           className="mobile-menu-toggle"
