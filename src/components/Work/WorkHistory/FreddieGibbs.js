@@ -60,7 +60,7 @@ function FreddieGibbs() {
                 <li>{location} Location: 25 E 28th St</li>
               </ul>
             </div>
-            <div className="detail-image"></div>
+            {/* <div className="detail-image"></div>  */}
           </div>
           <div id="button-blue-prof" className="button-prof">
             Buy Tickets
